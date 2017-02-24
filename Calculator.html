@@ -1,0 +1,59 @@
+	<script src="CalculatorBrain.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="CalculatorStyle.css">
+
+
+	<div id="main-container" class="row">   
+
+		<div id="display-div" class="col-xs-12">
+			<span id="display-text" class="col-xs-12 text-right lead">0</span>
+		</div>
+		
+		<div class="button-row col-xs-12 secondary">
+			<button class="col-xs-3 btn btn-danger" value="pi" onclick="operator(this)">&Pi;</button> 
+			<button class="col-xs-3 btn btn-danger" value="e" onclick="operator(this)">e</button>
+			<button class="col-xs-3 btn btn-danger" value="sqr" onclick="operator(this)">&radic;</button>
+			<button class="col-xs-3 btn btn-danger" value="cos" onclick="operator(this)">cos</button>			
+		</div>
+
+		<div class="button-row col-xs-12">
+			<button class="col-xs-3 btn btn-default" value="Clear" onclick="operator(this)">AC</button> 
+			<button class="col-xs-3 btn btn-default" value="+/-" onclick="operator(this)">+/-</button>
+			<button class="col-xs-3 btn btn-default" value="%" onclick="operator(this)">%</button>
+			<button class="col-xs-3 btn btn-warning" value="/" onclick="operator(this)">&divide;</button>			
+		</div>
+
+		<div class="button-row col-xs-12">
+			<button class="col-xs-3 btn btn-default" value="7" onclick="digit(this)">7</button>
+			<button class="col-xs-3 btn btn-default" value="8" onclick="digit(this)">8</button>
+			<button class="col-xs-3 btn btn-default" value="9" onclick="digit(this)">9</button>
+			<button class="col-xs-3 btn btn-warning" value="*" onclick="operator(this)">&times;</button> 			
+		</div>
+
+		<div class="button-row col-xs-12">
+			<button class="col-xs-3 btn btn-default" value="4" onclick="digit(this)">4</button>
+			<button class="col-xs-3 btn btn-default" value="5" onclick="digit(this)">5</button>
+			<button class="col-xs-3 btn btn-default" value="6" onclick="digit(this)">6</button>
+			<button class="col-xs-3 btn btn-warning" value="-" onclick="operator(this)">-</button> 
+		</div>
+
+		<div class="button-row col-xs-12">
+			<button class="col-xs-3 btn btn-default" value="1" onclick="digit(this)">1</button>
+			<button class="col-xs-3 btn btn-default" value="2" onclick="digit(this)">2</button>
+			<button class="col-xs-3 btn btn-default" value="3" onclick="digit(this)">3</button>
+			<button class="col-xs-3 btn btn-warning" value="+" onclick="operator(this)">+</button> 			
+		</div>
+
+		<div class="button-row col-xs-12">
+			<button class="col-xs-6 btn btn-default" value="0" onclick="digit(this)">0</button>
+			<button class="col-xs-3 btn btn-default" value="." onclick="digit(this)">.</button>
+			<button class="col-xs-3 btn btn-primary" value="=" onclick="operator(this)">=</button>			
+		</div>
+															
+	</div>
+
+	<footer>
+	<p>Made by <a href="https://codepen.io/crowley445/">Brian Crowley</a></p>
+	</footer>
+
